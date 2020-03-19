@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>Config HKUST connect email on Linux</head>
+<body>
+<p>First, send an email to ITSC to explain your purpose and get "Tenant ID" and "Application ID". Then, we take Manjaro Linux as an example.</p>
+<ol>
+    <li>Install Evolution and its ews plugin: "sudo pacman -S evolution evolution-ews"</li>
+    <li>Open Evolution</li>
+    <li>Click "Edit - Preferecnces - Add email account"</li>
+    <li>Input your email address: "xxx@connect.ust.hk", then click "Next"</li>
+    <li>Choose "Server type" as "Exchange Web Services", then input the "Host Url": "https://outlook.office365.com/EWS/Exchange.asmx"</li>
+    <li>Then choose the authentication type as "OAuth2", and input the "Tenant ID" and "Application ID"</li>
+    <li>Click "Next" until "Apply", and it will prompts a CAS authentication window, just authenticate with your Duo Mobile App.</li>
+    <li>Done.</li>
+</ol>
+</body>
+</html>
